@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+}
+
+html, body{
+	height:100%;
+	width:100%;
+	background-color:#222222;
+}
+
+#content{
+	width:902px;
+	margin:20px auto;	
+	min-height:100%;
+	position:relative;
+}
+
+#empty{
+	height:40px;
+}
+
+#footer{
+	min-height:40px;
+	margin:-40px auto 0;
+	width:902px;
+	position:relative;
+	text-align:center;
+}
+
+#header{
+	text-align:center;
+	background-color: #2A2A2A;
+	border: 1px solid #444444;	
+	padding: 5px 0;
+	margin-bottom: 20px;
+}
+#header h2{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+	color:#CCCCCC;
+}
+#gallery {
+	background-color: #2A2A2A;
+    border: 1px solid #444444;
+    margin-bottom: 20px;
+    overflow: hidden;
+	padding: 0px 0;
+	height: 500px;
+	width: 900px;
+	position: relative;
+}
+#gallery .loading {
+	left:435px;
+	margin:1px;
+	top: 235px;
+	height:30px;
+	width:30px;
+	z-index:9999;
+	position:absolute;	
+}
+#upload {
+	background-color: #2A2A2A;
+    border: 1px solid #444444;
+    padding: 5px 10px;
+}
+
+#chooseGallery{
+	margin-left:35px;
+	padding-top:15px;
+}
+
+#prev_container{
+	margin: 0 26px;
+	display: none;
+}
+
+#next_container{
+	margin: 0 26px;
+	display: none;
+}
+
+#chooseGallery .first{
+	position:absolute;
+	left:435px;
+	top: 235px;		
+	border: 0px solid;
+	list-style-type:none;
+	background: #444444;
+	height: 30px;
+	width: 30px;
+}
+
+#chooseGallery .loaded{
+	float: left;
+	border: 0px solid;
+	list-style-type:none;
+	background: #444444;
+	margin:0px 10px 10px 0px;
+	height: 150px;
+	width: 200px;	
+}
+
+#chooseGallery li img{
+	vertical-align:bottom;
+	width:200px;
+	display:none;
+}
+
+#prev {
+	position:absolute;
+	padding:2px;
+	cursor:pointer;	
+	display:none;
+}
+#next {
+	margin-left: 870px;
+	position:absolute;
+	padding:2px;
+	cursor:pointer;
+	display:none;
+}
+
+#blprev {
+	position:absolute;
+	padding:2px;
+	z-index:-1;	
+	width: 26px;
+	height: 496px;
+}
+#blnext {
+	margin-left: 870px;
+	position:absolute;
+	padding:2px;
+	z-index:-1;
+	width: 26px;
+	height: 496px;
+}
+#input{
+	padding:5px;
+	color:#ccc;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+#input td{
+	text-align:right;
+	font-weight: bold;
+	padding-right:2px;
+}
+#input th{
+	text-align:center;
+	font-weight: bold;
+	font-size:16px;
+	padding-bottom:10px;
+	
+}
+
+#input .sbmt{
+	width: 120px;
+	margin-top:5px	
+}
+
+#input textarea{
+	resize: none;
+	text-align:left;
+	font-weight: bold;
+	width: 214px; 
+	height: 100px;
+}
