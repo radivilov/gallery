@@ -8,6 +8,7 @@ class Controller_Ajax extends Controller {
 		$way = Arr::get($_POST, 'way', '');
 		$res='';
 		$this->response->headers('Content-Type','application/json');
+		
 		if ($way == 1) {
 			$img = ORM::factory('ProjImage')->where('id', '>', $id)->order_by('id','ASC')->limit($limit);		
 			foreach ($img->find_all() as $key) {
@@ -19,9 +20,7 @@ class Controller_Ajax extends Controller {
 				$res[] = array( "id" => $key->id, "alt" => $key->alt , "ext" => $key->ext);
 			}
 			$res = ($res!='')? array_reverse($res):'';
-		}
-		
-		
+		}		
 		echo json_encode($res);		
 	}
 

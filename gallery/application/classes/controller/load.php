@@ -3,6 +3,7 @@
 class Controller_Load extends Controller {
 	
 	public function action_post() {
+		
 		$session = Session::instance();
 		$validate = Validation::factory($_FILES)
 		->rule('image', 'Upload::valid')
@@ -31,8 +32,7 @@ class Controller_Load extends Controller {
 				$session->set('success','Изображение загружено!');
 				unlink($filename);
 			}			
-			Request::initial()->redirect('');		
-			
+			Request::initial()->redirect('');			
 		} else {
 			$this->errors = $validate->errors('load');
 			$er = array_values($this->errors);
