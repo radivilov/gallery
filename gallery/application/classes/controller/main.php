@@ -8,7 +8,7 @@ class Controller_Main extends Controller_Template
     public function action_index()
     {
 
-        $img = new Model_ProjImage();
+
         $session = Session::instance();
         $data['er'] = $session->get('error', '');
         $data['success'] = $session->get('success', '');
